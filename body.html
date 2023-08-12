@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Donation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("img/bddot.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font: size 30px;
+        }
+        .container{
+            position: relative;
+            top: 150px;
+            left: 400px;
+        }
+      button{
+        border-radius: 50%;
+        border: 2px solid black;
+        width: 70px;
+        height: 30px;
+        background-color: burlywood;
+        color: black;
+      }
+      @media (max-width: 768px){
+        body{
+            background-image: url("img/bddot.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 1000px;
+            width:200%;
+        }
+        .container{
+            position: relative;
+            left: 60px;
+            top: 30px;
+        }
+
+      }
+    </style>
+</head>
+<body>
+    <form action="body.php" method="post">
+    <h1>BODY DONATION</h1>
+    
+    <div class="container">
+        Name <input type="text" name="name" placeholder="Type Your Name "><br> <br> <br>
+        Age <input type="text" name="age" placeholder="Type Your Age "><br>  <br> <br>
+        Gender <input type="text" name="gender" placeholder="Type Your Gender"><br>  <br> <br>
+        Phone <input type="text" name="phone" placeholder="Type Your Phone"><br> <br> <br>
+        AadharNumber <input type="text" name="adhar" placeholder="Type Your Aadhar Number"><br> <br>  <br>
+        <button>submit</button>
+       </div>
+    </form>
+</body>
+</html>

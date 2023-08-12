@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url("img/hands.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+          font-size: 40px;
+        }
+        .container{
+            position: relative;
+            top: 150px;
+            left: 1050px;
+            font-weight: bold;
+        }
+      button{
+        border-radius: 50%;
+        border: 2px solid black;
+        width: 70px;
+        height: 30px;
+        background-color: black;
+        color:white;
+      }
+      @media (max-width: 600px){
+        .container{
+            position: relative;
+            left: 320px;
+           top: 1px;
+        }
+      }
+      @media (max-width: 768px){} 
+      .container{
+        position: relative;
+      
+      }
+        
+      
+    </style>
+</head>
+<body>
+    <form action="join.php" method="post">
+    <h1>Join Us</h1>
+    
+    <div class="container">
+        Name <input type="text" name="name" placeholder="Type Your Name "><br> <br> <br>
+        Age <input type="text" name="age" placeholder="Type Your Age "><br>  <br> <br>
+        Gender <input type="text" name="gender" placeholder="Type Your Gender"><br>  <br> <br>
+        Phone <input type="text" name="phone" placeholder="Type Your Phone"><br> <br> <br>
+        AadharNumber <input type="text" name="adhar" placeholder="Type Your Aadhar Number"><br> <br>  <br>
+        <button>submit</button>
+       </div>
+    </form>
+</body>
+</html>
